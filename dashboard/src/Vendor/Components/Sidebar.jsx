@@ -3,9 +3,9 @@ import React from 'react'
 const Sidebar = () => {
   return (
     <div>
-      <div className='w-[100%] max-w-[50%] bg-amber-300 h-[90vh] sm:max-w[15%] lg:max-w[20%]'>
-        <ul>
-          <li>Add Firm</li>
+      <div className='w-[100%] max-w-[25%] bg-blue-300  h-[93vh] sm:max-w-[15%] lg:max-w-[10%] flex justify-center p-5 font-bold  '>
+        <ul className='h-[200px]  flex flex-col justify-around'>
+          <li className=''>Add Firm</li>
           <li>Add Product</li>
           <li>All Products</li>
           <li>User Details</li>
