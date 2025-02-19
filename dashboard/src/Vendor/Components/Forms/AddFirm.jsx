@@ -2,7 +2,7 @@ import React from 'react'
 
 const AddFirm = () => {
   return (
-    <div className='shadow-[0_0_10px_#0A0A0A] w-[300px] p-2.5 rounded h-[400px] mx-auto mt-8 '>
+    <div className='shadow-[0_0_10px_#0A0A0A] w-[400px] p-2.5 rounded h-[470px] mx-auto mt-8 '>
         <div className=' '>
             <h1 className='text-center font-bold '>Add Firm</h1>
          <form className=''>
@@ -34,7 +34,26 @@ const AddFirm = () => {
 
             <div className='flex flex-col'>
                 <label htmlFor="">Region:</label>
-                <input type="text" className='focus:outline-none border-2 border-gray-300 rounded focus:ring-2 focus:ring-blue-300' />
+                <div className='flex flex-wrap'>
+                    <div className='flex flex-col w-1/2'>
+                        <label className='text-[11px] text-center'>South Indian</label>
+                        <input type='checkbox' className=' w-6 h-6 m-auto' />
+                    </div>
+                    <div className='flex flex-col w-1/2'>
+                        <label className='text-[11px] text-center'>South Indian</label>
+                        <input type='checkbox' className=' w-6 h-6 m-auto' />
+                    </div>
+                    <div className='flex flex-col w-1/2'>
+                        <label className='text-[11px] text-center'>South Indian</label>
+                        <input type='checkbox' className=' w-6 h-6 m-auto' />
+                    </div>
+                    <div className='flex flex-col w-1/2'>
+                        <label className='text-[11px] text-center'>South Indian</label>
+                        <input type='checkbox' className=' w-6 h-6 m-auto' />
+                    </div>
+                
+               
+                </div>
             </div>
 
             <div className='flex flex-col'>
@@ -45,11 +64,8 @@ const AddFirm = () => {
             <div >
                 {/* <label htmlFor="">Firm Image</label>
                 <input type="file" className='w-[200px] border-2 border-gray-300' /> */}
-                <label class="block w-64 p-3 text-center bg-blue-500 text-white rounded-lg cursor-pointer mt-5 h-[40px]">
-                Choose File
-                <input type="file" class="" />
-            </label>
-
+                 <input type="file" name="" className='bg-gray-300 mt-3  rounded' id="" /> 
+                  
             </div>
 
             <div className='text-center mt-3'>

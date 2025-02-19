@@ -31,6 +31,7 @@ const Login =() => {
       
         setEmail('')
         setPassword('')
+        
       }else{
         alert('Login failed try again')
       }

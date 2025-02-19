@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 
-const Register = () => {
+const Register = ({loginFun}) => {
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
@@ -11,7 +11,7 @@ const Register = () => {
     const details ={name, email, password}
    
    try {
-        const registerRoute = await fetch('http://localhost:3000/vendor/register',{
+        const registerRoute = await fetch('https://food-app-jwad.onrender.com/vendor/register',{
           method:'POST',
           headers:{
             'Content-Type':'Application/json'
@@ -26,6 +26,7 @@ const Register = () => {
             setName('')
             setEmail('')
             setPassword('')
+            loginFun()
         }
    } catch (error) {
      
@@ -40,7 +41,7 @@ const Register = () => {
 
   return (
     <div className='m-[0_0_0_100px]'>
-        <div className='w-[400px]  mb-7 shadow-2xl shadow-zinc-900 p-[10px] rounded-[10px] text-center mt-6 '>
+        <div className='w-[400px]  mb-7 shadow-2xl shadow-zinc-900 p-[10px] rounded-[10px] text-center mt-6 m-auto'>
             <h1 className='text-center font-bold'>Vendor Register Form</h1>
 
             <form className='h-[200px] flex flex-col mt-[20px]' onSubmit={userHandler}>
